@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - tasks:
+– name: change target with systemd
+systemd:
+name: multi-user.target
+state: started
+enabled: True

@@ -5,7 +5,7 @@
     - name: set vm.swappiness to 10
       sysctl:
         name: vm.swappiness
-        value: '5'
+        value: '10'
         state: present
       when: ansible_memtotal_mb > 2048
 
